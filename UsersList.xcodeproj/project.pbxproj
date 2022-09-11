@@ -136,12 +136,11 @@
 		191E687728CC3668001B32C0 /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				19D6600628CDA3B70006B7A5 /* Storyboards */,
+				19D6600728CDA4370006B7A5 /* Resources */,
 				191E687828CC3668001B32C0 /* AppDelegate.swift */,
 				191E687A28CC3668001B32C0 /* SceneDelegate.swift */,
 				191E687C28CC3668001B32C0 /* ViewController.swift */,
-				191E687E28CC3668001B32C0 /* Main.storyboard */,
-				191E688128CC366A001B32C0 /* Assets.xcassets */,
-				191E688328CC366A001B32C0 /* LaunchScreen.storyboard */,
 				191E688628CC366A001B32C0 /* Info.plist */,
 			);
 			path = UsersList;
@@ -172,6 +171,23 @@
 				1941208D28CD91380061E1C0 /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19D6600628CDA3B70006B7A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				191E687E28CC3668001B32C0 /* Main.storyboard */,
+				191E688328CC366A001B32C0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		19D6600728CDA4370006B7A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				191E688128CC366A001B32C0 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
