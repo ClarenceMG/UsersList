@@ -10,6 +10,12 @@ import UIKit
 class UserDetailViewController: UIViewController {
 
     var output: UserDetailViewOutput!
+    
+    var userPosts: [UserPost] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     
     // MARK: IBOutlets
@@ -45,6 +51,35 @@ class UserDetailViewController: UIViewController {
 
 // MARK: UserDetailViewInput Methods
 
+extension UserDetailViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userPosts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = userPosts[indexPath.row].title
+        content.secondaryText = userPosts[indexPath.row].body
+        content.secondaryTextProperties.color = .darkGray
+        
+        cell.contentConfiguration = content
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return MainList.Common.publications
+    }
+}
+
+
+// MARK: UserDetailViewInput Methods
+
 extension UserDetailViewController: UserDetailViewInput {
 
     func setUpInitialState(user: UserInfoElement) {
@@ -55,5 +90,9 @@ extension UserDetailViewController: UserDetailViewInput {
 
     func moduleInput() -> UserDetailModuleInput {
         return output as! UserDetailModuleInput
+    }
+    
+    func updatePosts(posts: [UserPost]) {
+        userPosts = posts
     }
 }

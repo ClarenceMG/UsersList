@@ -40,7 +40,7 @@ extension UserDetailPresenter: UserDetailViewOutput {
 
 extension UserDetailPresenter: UserDetailInteractorOutput {
     func didRetrievePosts(posts: [UserPost]) {
-        print("post")
+        view.updatePosts(posts: posts)
     }
     
     func didFailRetrievingPosts(title: String, message: String) {
