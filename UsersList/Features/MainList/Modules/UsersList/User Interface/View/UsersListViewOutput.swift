@@ -8,4 +8,5 @@
 protocol UsersListViewOutput {
 
     func viewIsReady()
+    func routeToDetail(user: UserInfoElement)
 }

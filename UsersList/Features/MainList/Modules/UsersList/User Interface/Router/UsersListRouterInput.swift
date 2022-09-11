@@ -6,4 +6,6 @@
 //
 
 protocol UsersListRouterInput {
+    
+    func routeToDetail(user: UserInfoElement)
 }

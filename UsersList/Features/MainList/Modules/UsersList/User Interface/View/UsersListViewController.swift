@@ -146,7 +146,10 @@ extension UsersListViewController: UITableViewDataSource {
 extension UsersListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Item \(indexPath.row) was tapped")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let user = usersFilteredList.isEmpty ? usersList[indexPath.row] : usersFilteredList[indexPath.row]
+        
+        output.routeToDetail(user: user)
     }
 }

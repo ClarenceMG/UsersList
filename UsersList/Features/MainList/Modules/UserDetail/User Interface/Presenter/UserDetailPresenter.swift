@@ -17,7 +17,7 @@ class UserDetailPresenter {
 
 extension UserDetailPresenter: UserDetailModuleInput {
 
-    func initializeModule() {
+    func initializeModule(user: UserInfoElement) {
     }
 }
 
