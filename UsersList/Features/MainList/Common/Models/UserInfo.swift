@@ -6,30 +6,23 @@
 //
 
 import Foundation
+import RealmSwift
 
 // MARK: - UserInfoElement
 struct UserInfoElement: Codable {
     let id: Int
-    let name, username, email: String
-    let address: Address
-    let phone, website: String
-    let company: Company
-}
-
-// MARK: - Address
-struct Address: Codable {
-    let street, suite, city, zipcode: String
-    let geo: Geo
-}
-
-// MARK: - Geo
-struct Geo: Codable {
-    let lat, lng: String
-}
-
-// MARK: - Company
-struct Company: Codable {
-    let name, catchPhrase, bs: String
+    let name: String
+    let phone: String
+    let email: String
 }
 
 typealias UserInfo = [UserInfoElement]
+
+
+// MARK: Realm objects
+class UserInformation: Object {
+    @Persisted var id: Int = 0
+    @Persisted var name: String?
+    @Persisted var phone: String?
+    @Persisted var email: String?
+}
