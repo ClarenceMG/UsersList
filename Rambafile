@@ -1,0 +1,31 @@
+### Headers settings
+company: Clarence M
+
+### Xcode project settings
+project_name: UsersList
+xcodeproj_path: UsersList.xcodeproj
+
+# Needed for @testable import in tests. Should be the same as "project_target"
+product_module_name: UsersList
+
+### Code generation settings section
+# The main project target name
+project_target: UsersList
+
+# The file path for new modules
+project_file_path: /UsersList/Features/FEATURE_NAME/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: UsersListTests
+
+# The file path for new tests
+test_file_path: /UsersListTests/Features/FEATURE_NAME/Modules
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: my_viper}

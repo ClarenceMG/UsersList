@@ -63,6 +63,9 @@ playground.xcworkspace
 Carthage/Checkouts
 Carthage/Build/
 
+# Templates
+Templates/
+
 # Accio dependency management
 Dependencies/
 .accio/
