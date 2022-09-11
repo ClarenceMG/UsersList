@@ -27,19 +27,33 @@ final class UserDetailPresenterTest: QuickSpec {
     // MARK: Mock Classes
 
     private class MockInteractor: UserDetailInteractorInput {
+        
+        var retrievePostsCount = 0
+        
+        func retrievePosts(id: Int) {
+            retrievePostsCount += 1
+        }
     }
 
     private class MockRouter: UserDetailRouterInput {
     }
 
     private class MockView: UserDetailViewInput {
-
-        func setUpInitialState() {
-        }
+        
+        var setUpInitialStateCount = 0
+        var updatePostsCount = 0
 
         func moduleInput() -> UserDetailModuleInput {
 
             return UserDetailPresenter()
 	    }
+        
+        func setUpInitialState(user: UserInfoElement) {
+            setUpInitialStateCount += 1
+        }
+        
+        func updatePosts(posts: [UserPost]) {
+            updatePostsCount += 1
+        }
     }
 }

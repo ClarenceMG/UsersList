@@ -29,9 +29,14 @@ final class UsersListViewTest: QuickSpec {
     private class MockOutput: UsersListViewOutput {
 
         var viewIsReadyCount = 0
+        var routeToDetailCount = 0
 
         func viewIsReady() {
             viewIsReadyCount += 1
+        }
+        
+        func routeToDetail(user: UserInfoElement) {
+            routeToDetailCount += 1
         }
     }
 }
