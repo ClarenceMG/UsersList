@@ -6,4 +6,6 @@
 //
 
 protocol UserDetailInteractorInput {
+    
+    func retrievePosts(id: Int)
 }

@@ -6,4 +6,7 @@
 //
 
 protocol UserDetailInteractorOutput: AnyObject {
+    
+    func didRetrievePosts(posts: [UserPost])
+    func didFailRetrievingPosts(title: String, message: String)
 }

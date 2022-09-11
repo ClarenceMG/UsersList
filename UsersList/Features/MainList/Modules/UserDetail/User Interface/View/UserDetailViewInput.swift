@@ -7,6 +7,6 @@
 
 protocol UserDetailViewInput: AnyObject {
 
-    func setUpInitialState()
+    func setUpInitialState(user: UserInfoElement)
     func moduleInput() -> UserDetailModuleInput
 }

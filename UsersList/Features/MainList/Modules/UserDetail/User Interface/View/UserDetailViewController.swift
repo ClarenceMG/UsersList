@@ -11,13 +11,32 @@ class UserDetailViewController: UIViewController {
 
     var output: UserDetailViewOutput!
 
-
+    
+    // MARK: IBOutlets
+    
+    @IBOutlet weak var userInfoView: UIView! {
+        didSet {
+            userInfoView.layer.cornerRadius = 6
+        }
+    }
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            
+        }
+    }
+    
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-	    // TODO: View set up code goes here. Please remove this comment.
+        title = MainList.Common.userDetailInfo
 
         output.viewIsReady()
     }
@@ -28,7 +47,10 @@ class UserDetailViewController: UIViewController {
 
 extension UserDetailViewController: UserDetailViewInput {
 
-    func setUpInitialState() {
+    func setUpInitialState(user: UserInfoElement) {
+        nameLabel.text = user.name
+        phoneLabel.text = user.phone
+        emailLabel.text = user.email
     }
 
     func moduleInput() -> UserDetailModuleInput {

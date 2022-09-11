@@ -10,6 +10,8 @@ class UserDetailPresenter {
     weak var view: UserDetailViewInput!
     var interactor: UserDetailInteractorInput!
     var router: UserDetailRouterInput!
+    
+    var user: UserInfoElement!
 }
 
 
@@ -18,6 +20,7 @@ class UserDetailPresenter {
 extension UserDetailPresenter: UserDetailModuleInput {
 
     func initializeModule(user: UserInfoElement) {
+        self.user = user
     }
 }
 
@@ -27,6 +30,8 @@ extension UserDetailPresenter: UserDetailModuleInput {
 extension UserDetailPresenter: UserDetailViewOutput {
 
     func viewIsReady() {
+        view.setUpInitialState(user: user)
+        interactor.retrievePosts(id: user.id)
     }
 }
 
@@ -34,4 +39,11 @@ extension UserDetailPresenter: UserDetailViewOutput {
 // MARK: UserDetailInteractorOutput methods
 
 extension UserDetailPresenter: UserDetailInteractorOutput {
+    func didRetrievePosts(posts: [UserPost]) {
+        print("post")
+    }
+    
+    func didFailRetrievingPosts(title: String, message: String) {
+        print("error")
+    }
 }

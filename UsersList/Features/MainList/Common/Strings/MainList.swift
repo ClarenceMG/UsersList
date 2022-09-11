@@ -15,5 +15,6 @@ struct MainList {
         static let error = "Error"
         static let searchUsers = "Buscar usuarios"
         static let emptyList = "La lista esta vacía"
+        static let userDetailInfo = "Detalle del usuario"
     }
 }
