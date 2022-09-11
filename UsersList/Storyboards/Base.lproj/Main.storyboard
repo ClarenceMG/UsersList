@@ -48,6 +48,26 @@
             </objects>
             <point key="canvasLocation" x="1960.8695652173915" y="94.419642857142847"/>
         </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="Yss-G3-7PY">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailViewController" id="kIv-qD-CCu" customClass="UserDetailViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oVb-Ht-Ks9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ngy-N2-yfp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUa-93-pwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Y4d-De-oCb" customClass="UserDetailModuleInitializer" customModule="UsersList" customModuleProvider="target">
+                    <connections>
+                        <outlet property="userDetailViewController" destination="kIv-qD-CCu" id="Ish-6B-c3d"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2774" y="94"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
