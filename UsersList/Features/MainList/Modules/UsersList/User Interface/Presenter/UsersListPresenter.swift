@@ -27,6 +27,7 @@ extension UsersListPresenter: UsersListModuleInput {
 extension UsersListPresenter: UsersListViewOutput {
 
     func viewIsReady() {
+        interactor.retrieveUsers()
     }
 }
 
@@ -34,4 +35,11 @@ extension UsersListPresenter: UsersListViewOutput {
 // MARK: UsersListInteractorOutput methods
 
 extension UsersListPresenter: UsersListInteractorOutput {
+    func didRetrieveUsers(users: [UserInfoElement]) {
+        view.updateUsersList(users: users)
+    }
+    
+    func didFailRetrievingUsers(title: String, message: String) {
+        view.showError(title: title, message: message)
+    }
 }

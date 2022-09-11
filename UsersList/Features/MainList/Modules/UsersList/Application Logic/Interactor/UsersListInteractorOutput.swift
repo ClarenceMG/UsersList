@@ -6,4 +6,7 @@
 //
 
 protocol UsersListInteractorOutput: AnyObject {
+    
+    func didRetrieveUsers(users: [UserInfoElement])
+    func didFailRetrievingUsers(title: String, message: String)
 }

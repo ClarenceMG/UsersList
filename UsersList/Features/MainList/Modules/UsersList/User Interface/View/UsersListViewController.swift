@@ -13,6 +13,18 @@ class UsersListViewController: UIViewController {
 
     var searchController = UISearchController()
     
+    
+    // MARK: IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    //MARK: variables
+    var usersList: [UserInfoElement] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
@@ -37,6 +49,14 @@ extension UsersListViewController: UsersListViewInput {
     func moduleInput() -> UsersListModuleInput {
         return output as! UsersListModuleInput
     }
+    
+    func updateUsersList(users: [UserInfoElement]) {
+        usersList = users
+    }
+    
+    func showError(title: String, message: String) {
+        // TODO: Show error message
+    }
 }
 
 
@@ -58,7 +78,7 @@ extension UsersListViewController: UISearchResultsUpdating {
 
 extension UsersListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return usersList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

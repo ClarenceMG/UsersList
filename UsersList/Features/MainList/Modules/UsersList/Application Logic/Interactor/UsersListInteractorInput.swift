@@ -6,4 +6,6 @@
 //
 
 protocol UsersListInteractorInput {
+    
+    func retrieveUsers()
 }

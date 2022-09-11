@@ -9,4 +9,6 @@ protocol UsersListViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> UsersListModuleInput
+    func updateUsersList(users: [UserInfoElement])
+    func showError(title: String, message: String)
 }

@@ -12,5 +12,6 @@ struct MainList {
     struct Common {
         
         static let users = "Usuarios"
+        static let error = "Error"
     }
 }

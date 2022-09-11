@@ -22,6 +22,8 @@
 		1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
+		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
+		19D6601128CDBEFC0006B7A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6601028CDBEFC0006B7A5 /* UserInfo.swift */; };
 		265E7D5AD1D8344C9F47C9A7 /* UsersListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865898E4ADAC88A67076205 /* UsersListViewInput.swift */; };
 		2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */; };
 		42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */; };
@@ -101,6 +103,8 @@
 		1941209128CD91770061E1C0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		1941209328CD917A0061E1C0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
+		19D6600D28CDBDB50006B7A5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		19D6601028CDBEFC0006B7A5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
 		3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
 		46040FA83974B54B13640FEB /* UsersListViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewTest.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				BCA516749D553E02AEF657B8 /* Features */,
 				19D6600628CDA3B70006B7A5 /* Storyboards */,
 				19D6600728CDA4370006B7A5 /* Resources */,
+				19D6600C28CDBD960006B7A5 /* API Service */,
 				191E687828CC3668001B32C0 /* AppDelegate.swift */,
 				191E687A28CC3668001B32C0 /* SceneDelegate.swift */,
 				191E688628CC366A001B32C0 /* Info.plist */,
@@ -228,6 +233,7 @@
 		19D6600828CDB8F20006B7A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				19D6600F28CDBEDA0006B7A5 /* Models */,
 				19D6600928CDB90D0006B7A5 /* Strings */,
 			);
 			path = Common;
@@ -239,6 +245,22 @@
 				19D6600A28CDB9200006B7A5 /* MainList.swift */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		19D6600C28CDBD960006B7A5 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600D28CDBDB50006B7A5 /* APIService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		19D6600F28CDBEDA0006B7A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19D6601028CDBEFC0006B7A5 /* UserInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2363F2BBDBAA0C2FD031AA61 /* Application Logic */ = {
@@ -571,7 +593,9 @@
 				191E687B28CC3668001B32C0 /* SceneDelegate.swift in Sources */,
 				42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */,
 				FECB28C44C0E92E290BFD515 /* UsersListInitializer.swift in Sources */,
+				19D6601128CDBEFC0006B7A5 /* UserInfo.swift in Sources */,
 				5965D87A25B59CC9AA1760A5 /* UsersListInteractor.swift in Sources */,
+				19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */,
 				F43A2391F46FB004B79495D5 /* UsersListInteractorInput.swift in Sources */,
 				8BB7CD02AD8620E414BA5C5D /* UsersListInteractorOutput.swift in Sources */,
 				B113832090A348DAFC6C815E /* UsersListModuleInput.swift in Sources */,

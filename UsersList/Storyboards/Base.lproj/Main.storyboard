@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LWd-DG-ccN"/>
+                    <connections>
+                        <outlet property="tableView" destination="tRT-d2-K9M" id="GwA-1N-Fxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="LVa-5s-oal" customClass="UsersListModuleInitializer" customModule="UsersList" customModuleProvider="target">
