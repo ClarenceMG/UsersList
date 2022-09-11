@@ -24,6 +24,8 @@
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
 		19D6601128CDBEFC0006B7A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6601028CDBEFC0006B7A5 /* UserInfo.swift */; };
+		19D6601528CDC51E0006B7A5 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */; };
+		19D6601628CDC51E0006B7A5 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */; };
 		265E7D5AD1D8344C9F47C9A7 /* UsersListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865898E4ADAC88A67076205 /* UsersListViewInput.swift */; };
 		2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */; };
 		42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */; };
@@ -105,6 +107,8 @@
 		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		19D6600D28CDBDB50006B7A5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		19D6601028CDBEFC0006B7A5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
 		3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
 		46040FA83974B54B13640FEB /* UsersListViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewTest.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		19D6600828CDB8F20006B7A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				19D6601228CDC4D70006B7A5 /* Cells */,
 				19D6600F28CDBEDA0006B7A5 /* Models */,
 				19D6600928CDB90D0006B7A5 /* Strings */,
 			);
@@ -261,6 +266,15 @@
 				19D6601028CDBEFC0006B7A5 /* UserInfo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		19D6601228CDC4D70006B7A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */,
+				19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2363F2BBDBAA0C2FD031AA61 /* Application Logic */ = {
@@ -561,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6601628CDC51E0006B7A5 /* UserTableViewCell.xib in Resources */,
 				191E688528CC366A001B32C0 /* LaunchScreen.storyboard in Resources */,
 				191E688228CC366A001B32C0 /* Assets.xcassets in Resources */,
 				191E688028CC3668001B32C0 /* Main.storyboard in Resources */,
@@ -598,6 +613,7 @@
 				19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */,
 				F43A2391F46FB004B79495D5 /* UsersListInteractorInput.swift in Sources */,
 				8BB7CD02AD8620E414BA5C5D /* UsersListInteractorOutput.swift in Sources */,
+				19D6601528CDC51E0006B7A5 /* UserTableViewCell.swift in Sources */,
 				B113832090A348DAFC6C815E /* UsersListModuleInput.swift in Sources */,
 				D00F8A76281B9D79B654694C /* UsersListPresenter.swift in Sources */,
 				96FCBE5E8ACAFFA99FB07D9F /* UsersListRouter.swift in Sources */,

@@ -15,15 +15,24 @@ class UsersListViewController: UIViewController {
     
     
     // MARK: IBOutlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UserTableViewCell.nib, forCellReuseIdentifier: UserTableViewCell.reuseIdentifier)
+        }
+    }
     
     
     //MARK: variables
     var usersList: [UserInfoElement] = [] {
         didSet {
+            usersFilteredList = usersList
             tableView.reloadData()
         }
     }
+    
+    var usersFilteredList: [UserInfoElement] = []
+    var filtered: Bool = false
+    var label = UILabel()
     
     // MARK: Life cycle
 
@@ -31,10 +40,31 @@ class UsersListViewController: UIViewController {
         super.viewDidLoad()
 
         title = MainList.Common.users
+        
         searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = MainList.Common.searchUsers
         navigationItem.searchController = searchController
         
         output.viewIsReady()
+    }
+    
+    func addMessageEmptyList() {
+        label.frame = CGRect(x: 0, y: (view.frame.width / 2) - 50, width: view.frame.width, height: 30)
+        label.textAlignment = .center
+        label.textColor = .darkGray
+        label.font = .systemFont(ofSize: 17)
+        label.text = MainList.Common.emptyList
+        label.isHidden = true
+        
+        view.addSubview(label)
+    }
+    
+    func showEmptyListMessage() {
+        label.isHidden = false
+    }
+    
+    func hideEmptyListMessage() {
+        label.isHidden = true
     }
 }
 
@@ -44,6 +74,7 @@ class UsersListViewController: UIViewController {
 extension UsersListViewController: UsersListViewInput {
 
     func setUpInitialState() {
+        addMessageEmptyList()
     }
 
     func moduleInput() -> UsersListModuleInput {
@@ -68,8 +99,21 @@ extension UsersListViewController: UISearchResultsUpdating {
             return
         }
         
-        // TODO: Update the users list based on search text
-        debugPrint(text)
+        if text.isEmpty {
+            usersFilteredList = usersList
+        } else {
+            usersFilteredList = usersList.filter({ $0.name.contains(text) })
+        }
+        
+        filtered = true
+        
+        if usersFilteredList.isEmpty {
+            showEmptyListMessage()
+        } else {
+            hideEmptyListMessage()
+        }
+        
+        tableView.reloadData()
     }
 }
 
@@ -78,11 +122,21 @@ extension UsersListViewController: UISearchResultsUpdating {
 
 extension UsersListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return usersList.count
+        
+        if !usersFilteredList.isEmpty {
+            return usersFilteredList.count
+        }
+        
+        return filtered ? 0 : usersList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.reuseIdentifier, for: indexPath) as! UserTableViewCell
+        
+        let user = usersFilteredList.isEmpty ? usersList[indexPath.row] : usersFilteredList[indexPath.row]
+
+        cell.configure(user: user)
+        return cell
     }
 }
 

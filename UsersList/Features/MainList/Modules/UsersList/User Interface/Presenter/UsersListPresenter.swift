@@ -27,6 +27,7 @@ extension UsersListPresenter: UsersListModuleInput {
 extension UsersListPresenter: UsersListViewOutput {
 
     func viewIsReady() {
+        view.setUpInitialState()
         interactor.retrieveUsers()
     }
 }
