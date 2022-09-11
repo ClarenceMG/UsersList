@@ -27,6 +27,7 @@ extension UsersListPresenter: UsersListModuleInput {
 extension UsersListPresenter: UsersListViewOutput {
 
     func viewIsReady() {
+        view.showLoadingIndicator()
         view.setUpInitialState()
         interactor.retrieveUsers()
     }
@@ -42,9 +43,11 @@ extension UsersListPresenter: UsersListViewOutput {
 extension UsersListPresenter: UsersListInteractorOutput {
     func didRetrieveUsers(users: [UserInfoElement]) {
         view.updateUsersList(users: users)
+        view.hideLoadingIndicator()
     }
     
     func didFailRetrievingUsers(title: String, message: String) {
         view.showError(title: title, message: message)
+        view.hideLoadingIndicator()
     }
 }

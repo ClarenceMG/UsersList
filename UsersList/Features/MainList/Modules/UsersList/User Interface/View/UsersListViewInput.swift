@@ -11,4 +11,6 @@ protocol UsersListViewInput: AnyObject {
     func moduleInput() -> UsersListModuleInput
     func updateUsersList(users: [UserInfoElement])
     func showError(title: String, message: String)
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
 }

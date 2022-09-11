@@ -21,6 +21,11 @@ class UsersListViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView! {
+        didSet {
+            activityIndicator.color = UIColor(named: "PrimaryColor")
+        }
+    }
     
     //MARK: variables
     var usersList: [UserInfoElement] = [] {
@@ -87,6 +92,14 @@ extension UsersListViewController: UsersListViewInput {
     
     func showError(title: String, message: String) {
         // TODO: Show error message
+    }
+    
+    func showLoadingIndicator() {
+        activityIndicator.startAnimating()
+    }
+    
+    func hideLoadingIndicator() {
+        activityIndicator.stopAnimating()
     }
 }
 

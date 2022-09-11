@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +20,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1a-5K-8He">
                         <rect key="frame" x="16" y="16" width="44" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <color key="textColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.20784313730000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <color key="textColor" name="PrimaryColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfP-Hg-9WE">
@@ -36,7 +37,7 @@
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ik-at-BSW">
                         <rect key="frame" x="16" y="42.5" width="26" height="23.5"/>
-                        <color key="tintColor" red="0.20784313725490194" green="0.36078431372549019" blue="0.20784313725490194" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" name="PrimaryColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="26" id="4qu-f6-ygr"/>
                             <constraint firstAttribute="width" constant="26" id="Sj5-wD-BCY"/>
@@ -44,7 +45,7 @@
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-J3-bQk">
                         <rect key="frame" x="16" y="72.5" width="26" height="22.5"/>
-                        <color key="tintColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.20784313730000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" name="PrimaryColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="26" id="ARP-hi-ojm"/>
                             <constraint firstAttribute="width" constant="26" id="SSi-uZ-OcB"/>
@@ -88,5 +89,8 @@
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.10980392156862745" green="0.28235294117647058" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
