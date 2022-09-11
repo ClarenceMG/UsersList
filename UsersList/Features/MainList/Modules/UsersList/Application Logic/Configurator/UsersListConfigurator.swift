@@ -17,6 +17,7 @@ class UsersListModuleConfigurator {
     private func configure(viewController: UsersListViewController) {
 
         let router = UsersListRouter()
+        router.viewController = viewController
 
         let presenter = UsersListPresenter()
         presenter.view = viewController

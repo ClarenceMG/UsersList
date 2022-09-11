@@ -30,6 +30,10 @@ extension UsersListPresenter: UsersListViewOutput {
         view.setUpInitialState()
         interactor.retrieveUsers()
     }
+    
+    func routeToDetail(user: UserInfoElement) {
+        router.routeToDetail(user: user)
+    }
 }
 
 

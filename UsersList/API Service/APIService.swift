@@ -27,4 +27,21 @@ class APIService: NSObject {
             completion(users)
         }
     }
+    
+    func retrievePosts(id: Int, completion: @escaping (UserPosts?) -> ()) {
+        
+        let request = AF.request("\(baseUrl)/posts", parameters: ["userId": id])
+        
+        request.responseDecodable(of: UserPosts.self) { response in
+            
+            if response.error != nil {
+                completion(nil)
+                return
+            }
+            
+            guard let posts = response.value else { return }
+            completion(posts)
+        }
+    }
+
 }
