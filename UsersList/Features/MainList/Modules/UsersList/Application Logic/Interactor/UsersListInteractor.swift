@@ -23,6 +23,7 @@ class UsersListInteractor: UsersListInteractorInput {
 
         if users.count > 0 {
             self.output.didRetrieveUsers(users: getUsers(users: users))
+            return
         }
 
         
@@ -44,6 +45,7 @@ class UsersListInteractor: UsersListInteractorInput {
             userInformation.id = user.id
             userInformation.name = user.name
             userInformation.phone = user.phone
+            userInformation.email = user.email
             
             try! localRealm.write {
                 localRealm.add(userInformation)
