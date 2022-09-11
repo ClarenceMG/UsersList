@@ -22,9 +22,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let bundle = Bundle(for: UsersListViewController.self)
         let storyBoard = UIStoryboard(name: "Main", bundle: bundle)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "UsersListViewController") as! UsersListViewController
-                
+        
+        let navigationController = UINavigationController(rootViewController: nextViewController)
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.backgroundColor = .white
+        
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = nextViewController
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

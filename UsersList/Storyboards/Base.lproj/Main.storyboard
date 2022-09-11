@@ -15,9 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tRT-d2-K9M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sEJ-Mb-SbU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U3b-u0-DSi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tRT-d2-K9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0M3-yl-9VG"/>
+                            <constraint firstItem="tRT-d2-K9M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VOi-mG-hr6"/>
+                            <constraint firstAttribute="bottom" secondItem="tRT-d2-K9M" secondAttribute="bottom" id="dKC-Cs-KzJ"/>
+                            <constraint firstItem="tRT-d2-K9M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nPp-A1-ekU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LWd-DG-ccN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="LVa-5s-oal" customClass="UsersListModuleInitializer" customModule="UsersList" customModuleProvider="target">
@@ -26,7 +43,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="141" y="95"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="94.419642857142847"/>
         </scene>
     </scenes>
     <resources>

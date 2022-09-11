@@ -21,6 +21,7 @@
 		1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; };
 		1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		265E7D5AD1D8344C9F47C9A7 /* UsersListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865898E4ADAC88A67076205 /* UsersListViewInput.swift */; };
 		2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */; };
 		42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */; };
@@ -99,6 +100,7 @@
 		1941208D28CD91380061E1C0 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		1941209128CD91770061E1C0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		1941209328CD917A0061E1C0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
 		3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
 		46040FA83974B54B13640FEB /* UsersListViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewTest.swift; sourceTree = "<group>"; };
@@ -223,6 +225,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		19D6600828CDB8F20006B7A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600928CDB90D0006B7A5 /* Strings */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19D6600928CDB90D0006B7A5 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600A28CDB9200006B7A5 /* MainList.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		2363F2BBDBAA0C2FD031AA61 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +290,7 @@
 		7D11031D0D9AA1511CA12581 /* MainList */ = {
 			isa = PBXGroup;
 			children = (
+				19D6600828CDB8F20006B7A5 /* Common */,
 				B5E04C45B721AD85C840E6A2 /* Modules */,
 			);
 			path = MainList;
@@ -548,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				191E687928CC3668001B32C0 /* AppDelegate.swift in Sources */,
+				19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */,
 				191E687B28CC3668001B32C0 /* SceneDelegate.swift in Sources */,
 				42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */,
 				FECB28C44C0E92E290BFD515 /* UsersListInitializer.swift in Sources */,
