@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		191E687928CC3668001B32C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E687828CC3668001B32C0 /* AppDelegate.swift */; };
 		191E687B28CC3668001B32C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E687A28CC3668001B32C0 /* SceneDelegate.swift */; };
-		191E687D28CC3668001B32C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E687C28CC3668001B32C0 /* ViewController.swift */; };
 		191E688028CC3668001B32C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E687E28CC3668001B32C0 /* Main.storyboard */; };
 		191E688228CC366A001B32C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191E688128CC366A001B32C0 /* Assets.xcassets */; };
 		191E688528CC366A001B32C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E688328CC366A001B32C0 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,28 @@
 		1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; };
 		1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
+		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
+		19D6601128CDBEFC0006B7A5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6601028CDBEFC0006B7A5 /* UserInfo.swift */; };
+		19D6601528CDC51E0006B7A5 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */; };
+		19D6601628CDC51E0006B7A5 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */; };
+		265E7D5AD1D8344C9F47C9A7 /* UsersListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D865898E4ADAC88A67076205 /* UsersListViewInput.swift */; };
+		2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */; };
+		42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */; };
+		5965D87A25B59CC9AA1760A5 /* UsersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */; };
+		6188D5DECA26FDF8166E1817 /* UsersListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46040FA83974B54B13640FEB /* UsersListViewTest.swift */; };
+		85C68B02CC0FC9B0B944343C /* UsersListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36D3C86004CA272618B4A51 /* UsersListViewOutput.swift */; };
+		8ADE172500D8803CF90BDDF0 /* UsersListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E7B5AAF9ED726AAB57A39D /* UsersListPresenterTest.swift */; };
+		8BB7CD02AD8620E414BA5C5D /* UsersListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58EE27D5D3219BEBAA300B /* UsersListInteractorOutput.swift */; };
+		8F1BE1C818F96F195FF35EED /* UsersListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DB5349069E498100DB91D /* UsersListRouterInput.swift */; };
+		96FCBE5E8ACAFFA99FB07D9F /* UsersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159579CF74976CA9F313C3AF /* UsersListRouter.swift */; };
+		A2046DAB73A34ACA02CB36D6 /* UsersListConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED2A5C9AD2209D0AA95FC55 /* UsersListConfiguratorTest.swift */; };
+		A99A000A6A7758A54C6A5AB8 /* UsersListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D707DDD9839B9A6D6479E77 /* UsersListInteractorTest.swift */; };
+		B113832090A348DAFC6C815E /* UsersListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51E5AFCB21BEA713D175DF /* UsersListModuleInput.swift */; };
+		D00F8A76281B9D79B654694C /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */; };
+		F43A2391F46FB004B79495D5 /* UsersListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7306B35BB1216D5E977F5A8D /* UsersListInteractorInput.swift */; };
+		F96DE9E36A678E3743173144 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F50FCD698BA8602A1FE62 /* UsersListViewController.swift */; };
+		FECB28C44C0E92E290BFD515 /* UsersListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466E9D807AA69A30ABE6DB0 /* UsersListInitializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0466E9D807AA69A30ABE6DB0 /* UsersListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInitializer.swift; sourceTree = "<group>"; };
+		159579CF74976CA9F313C3AF /* UsersListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListRouter.swift; sourceTree = "<group>"; };
 		191E687528CC3668001B32C0 /* UsersList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E687828CC3668001B32C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		191E687A28CC3668001B32C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		191E687C28CC3668001B32C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		191E687F28CC3668001B32C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		191E688128CC366A001B32C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		191E688428CC366A001B32C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +104,26 @@
 		1941208D28CD91380061E1C0 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		1941209128CD91770061E1C0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		1941209328CD917A0061E1C0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
+		19D6600D28CDBDB50006B7A5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		19D6601028CDBEFC0006B7A5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
+		3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
+		46040FA83974B54B13640FEB /* UsersListViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewTest.swift; sourceTree = "<group>"; };
+		5D707DDD9839B9A6D6479E77 /* UsersListInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractorTest.swift; sourceTree = "<group>"; };
+		6C6DB5349069E498100DB91D /* UsersListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListRouterInput.swift; sourceTree = "<group>"; };
+		7306B35BB1216D5E977F5A8D /* UsersListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractorInput.swift; sourceTree = "<group>"; };
+		A36D3C86004CA272618B4A51 /* UsersListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewOutput.swift; sourceTree = "<group>"; };
+		AD58EE27D5D3219BEBAA300B /* UsersListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListInteractorOutput.swift; sourceTree = "<group>"; };
+		B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListConfigurator.swift; sourceTree = "<group>"; };
+		C8E7B5AAF9ED726AAB57A39D /* UsersListPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListPresenterTest.swift; sourceTree = "<group>"; };
+		D865898E4ADAC88A67076205 /* UsersListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewInput.swift; sourceTree = "<group>"; };
+		DD51E5AFCB21BEA713D175DF /* UsersListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListModuleInput.swift; sourceTree = "<group>"; };
+		EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListRouterTest.swift; sourceTree = "<group>"; };
+		EED2A5C9AD2209D0AA95FC55 /* UsersListConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListConfiguratorTest.swift; sourceTree = "<group>"; };
+		F29F50FCD698BA8602A1FE62 /* UsersListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,12 +178,12 @@
 		191E687728CC3668001B32C0 /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
+				BCA516749D553E02AEF657B8 /* Features */,
+				19D6600628CDA3B70006B7A5 /* Storyboards */,
+				19D6600728CDA4370006B7A5 /* Resources */,
+				19D6600C28CDBD960006B7A5 /* API Service */,
 				191E687828CC3668001B32C0 /* AppDelegate.swift */,
 				191E687A28CC3668001B32C0 /* SceneDelegate.swift */,
-				191E687C28CC3668001B32C0 /* ViewController.swift */,
-				191E687E28CC3668001B32C0 /* Main.storyboard */,
-				191E688128CC366A001B32C0 /* Assets.xcassets */,
-				191E688328CC366A001B32C0 /* LaunchScreen.storyboard */,
 				191E688628CC366A001B32C0 /* Info.plist */,
 			);
 			path = UsersList;
@@ -151,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				191E688F28CC366A001B32C0 /* UsersListTests.swift */,
+				E4E8B5F04109932CE1AD26A8 /* Features */,
 			);
 			path = UsersListTests;
 			sourceTree = "<group>";
@@ -172,6 +215,258 @@
 				1941208D28CD91380061E1C0 /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19D6600628CDA3B70006B7A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				191E687E28CC3668001B32C0 /* Main.storyboard */,
+				191E688328CC366A001B32C0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		19D6600728CDA4370006B7A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				191E688128CC366A001B32C0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19D6600828CDB8F20006B7A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				19D6601228CDC4D70006B7A5 /* Cells */,
+				19D6600F28CDBEDA0006B7A5 /* Models */,
+				19D6600928CDB90D0006B7A5 /* Strings */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19D6600928CDB90D0006B7A5 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600A28CDB9200006B7A5 /* MainList.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		19D6600C28CDBD960006B7A5 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600D28CDBDB50006B7A5 /* APIService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		19D6600F28CDBEDA0006B7A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19D6601028CDBEFC0006B7A5 /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19D6601228CDC4D70006B7A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19D6601328CDC51E0006B7A5 /* UserTableViewCell.swift */,
+				19D6601428CDC51E0006B7A5 /* UserTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2363F2BBDBAA0C2FD031AA61 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				59BBAEBD0D0B8394935465F1 /* Configurator */,
+				ABC037B47DF8648F7CBDC15E /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		296017CEEC530AD2619F4199 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				8A6FD2329D3CB79FD823D5BA /* Application Logic */,
+				AA26B4F671EB5AB7E573422E /* User Interface */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		3C44C75509E14A9A0DDDE796 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD51E5AFCB21BEA713D175DF /* UsersListModuleInput.swift */,
+				3C63317A0F267A30B9EE06E6 /* UsersListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		59BBAEBD0D0B8394935465F1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B8ABDF22C416343AC3AD6977 /* UsersListConfigurator.swift */,
+				0466E9D807AA69A30ABE6DB0 /* UsersListInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		6A8EEFE082A41C24B0CC73F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F29F50FCD698BA8602A1FE62 /* UsersListViewController.swift */,
+				D865898E4ADAC88A67076205 /* UsersListViewInput.swift */,
+				A36D3C86004CA272618B4A51 /* UsersListViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D11031D0D9AA1511CA12581 /* MainList */ = {
+			isa = PBXGroup;
+			children = (
+				19D6600828CDB8F20006B7A5 /* Common */,
+				B5E04C45B721AD85C840E6A2 /* Modules */,
+			);
+			path = MainList;
+			sourceTree = "<group>";
+		};
+		8A6FD2329D3CB79FD823D5BA /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C22E8745CD34E861C9F0E928 /* Configurator */,
+				8DC7157B1EFAC6C1460BD0EA /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		8DC7157B1EFAC6C1460BD0EA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5D707DDD9839B9A6D6479E77 /* UsersListInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		94E8D4D005977CB510F1970E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				159579CF74976CA9F313C3AF /* UsersListRouter.swift */,
+				6C6DB5349069E498100DB91D /* UsersListRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9AD4F67A431426108E56D477 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD1D7E958CF88FFBB1B478 /* UsersListRouterTest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA26B4F671EB5AB7E573422E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4F67A431426108E56D477 /* Router */,
+				CC288530140822B1F6B2490A /* Presenter */,
+				D6E51C4768BE4A071ED40C83 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		ABC037B47DF8648F7CBDC15E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3144FD75C7B18E6354B00140 /* UsersListInteractor.swift */,
+				7306B35BB1216D5E977F5A8D /* UsersListInteractorInput.swift */,
+				AD58EE27D5D3219BEBAA300B /* UsersListInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		ABF80D098EDFAF775E2DEAB1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				296017CEEC530AD2619F4199 /* UsersList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AFAE49BFA7E5FA5D8B83786A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3C44C75509E14A9A0DDDE796 /* Presenter */,
+				94E8D4D005977CB510F1970E /* Router */,
+				6A8EEFE082A41C24B0CC73F2 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		B5E04C45B721AD85C840E6A2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B603A0E281686129DD40D956 /* UsersList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B603A0E281686129DD40D956 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				2363F2BBDBAA0C2FD031AA61 /* Application Logic */,
+				AFAE49BFA7E5FA5D8B83786A /* User Interface */,
+			);
+			path = UsersList;
+			sourceTree = "<group>";
+		};
+		BCA516749D553E02AEF657B8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7D11031D0D9AA1511CA12581 /* MainList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C22E8745CD34E861C9F0E928 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				EED2A5C9AD2209D0AA95FC55 /* UsersListConfiguratorTest.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CC288530140822B1F6B2490A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C8E7B5AAF9ED726AAB57A39D /* UsersListPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CC945624755AD9385EDD0351 /* MainList */ = {
+			isa = PBXGroup;
+			children = (
+				ABF80D098EDFAF775E2DEAB1 /* Modules */,
+			);
+			path = MainList;
+			sourceTree = "<group>";
+		};
+		D6E51C4768BE4A071ED40C83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46040FA83974B54B13640FEB /* UsersListViewTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4E8B5F04109932CE1AD26A8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CC945624755AD9385EDD0351 /* MainList */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6601628CDC51E0006B7A5 /* UserTableViewCell.xib in Resources */,
 				191E688528CC366A001B32C0 /* LaunchScreen.storyboard in Resources */,
 				191E688228CC366A001B32C0 /* Assets.xcassets in Resources */,
 				191E688028CC3668001B32C0 /* Main.storyboard in Resources */,
@@ -307,9 +603,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				191E687D28CC3668001B32C0 /* ViewController.swift in Sources */,
 				191E687928CC3668001B32C0 /* AppDelegate.swift in Sources */,
+				19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */,
 				191E687B28CC3668001B32C0 /* SceneDelegate.swift in Sources */,
+				42CC00778D45E8196F06A25D /* UsersListConfigurator.swift in Sources */,
+				FECB28C44C0E92E290BFD515 /* UsersListInitializer.swift in Sources */,
+				19D6601128CDBEFC0006B7A5 /* UserInfo.swift in Sources */,
+				5965D87A25B59CC9AA1760A5 /* UsersListInteractor.swift in Sources */,
+				19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */,
+				F43A2391F46FB004B79495D5 /* UsersListInteractorInput.swift in Sources */,
+				8BB7CD02AD8620E414BA5C5D /* UsersListInteractorOutput.swift in Sources */,
+				19D6601528CDC51E0006B7A5 /* UserTableViewCell.swift in Sources */,
+				B113832090A348DAFC6C815E /* UsersListModuleInput.swift in Sources */,
+				D00F8A76281B9D79B654694C /* UsersListPresenter.swift in Sources */,
+				96FCBE5E8ACAFFA99FB07D9F /* UsersListRouter.swift in Sources */,
+				8F1BE1C818F96F195FF35EED /* UsersListRouterInput.swift in Sources */,
+				F96DE9E36A678E3743173144 /* UsersListViewController.swift in Sources */,
+				265E7D5AD1D8344C9F47C9A7 /* UsersListViewInput.swift in Sources */,
+				85C68B02CC0FC9B0B944343C /* UsersListViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +629,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				191E689028CC366A001B32C0 /* UsersListTests.swift in Sources */,
+				A2046DAB73A34ACA02CB36D6 /* UsersListConfiguratorTest.swift in Sources */,
+				A99A000A6A7758A54C6A5AB8 /* UsersListInteractorTest.swift in Sources */,
+				2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */,
+				8ADE172500D8803CF90BDDF0 /* UsersListPresenterTest.swift in Sources */,
+				6188D5DECA26FDF8166E1817 /* UsersListViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
