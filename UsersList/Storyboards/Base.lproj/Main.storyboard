@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,18 +25,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="U3b-u0-DSi"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gTK-kP-ecr">
+                                <rect key="frame" x="20" y="429.5" width="374" height="37"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tRT-d2-K9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0M3-yl-9VG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gTK-kP-ecr" secondAttribute="trailing" constant="20" id="T2h-mT-f58"/>
                             <constraint firstItem="tRT-d2-K9M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VOi-mG-hr6"/>
                             <constraint firstAttribute="bottom" secondItem="tRT-d2-K9M" secondAttribute="bottom" id="dKC-Cs-KzJ"/>
                             <constraint firstItem="tRT-d2-K9M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nPp-A1-ekU"/>
+                            <constraint firstItem="gTK-kP-ecr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nnO-Zv-Z8f"/>
+                            <constraint firstItem="gTK-kP-ecr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sQD-T1-4wp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LWd-DG-ccN"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="gTK-kP-ecr" id="LV3-kQ-bK0"/>
                         <outlet property="tableView" destination="tRT-d2-K9M" id="GwA-1N-Fxe"/>
                     </connections>
                 </viewController>
@@ -62,7 +71,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-U2-tK5">
                                         <rect key="frame" x="16" y="16" width="44" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.20784313730000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" name="PrimaryColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-Vk-IXs">
@@ -73,7 +82,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="efk-1I-14G">
                                         <rect key="frame" x="16" y="42.5" width="26" height="23.5"/>
-                                        <color key="tintColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.20784313730000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" name="PrimaryColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="26" id="1lg-tR-Wk3"/>
                                             <constraint firstAttribute="height" constant="26" id="sl1-vd-aC7"/>
@@ -81,7 +90,7 @@
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-Xz-vcY">
                                         <rect key="frame" x="16" y="72.5" width="26" height="22.5"/>
-                                        <color key="tintColor" red="0.20784313730000001" green="0.36078431370000003" blue="0.20784313730000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" name="PrimaryColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="Bhs-UP-iF5"/>
                                             <constraint firstAttribute="width" constant="26" id="UYU-dI-o2i"/>
@@ -94,7 +103,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.83417103729603725" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="1vx-Lt-PYU"/>
                                     <constraint firstItem="fFJ-Vk-IXs" firstAttribute="leading" secondItem="efk-1I-14G" secondAttribute="trailing" constant="8" id="9p6-Kh-hfe"/>
@@ -151,8 +160,17 @@
     <resources>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.10980392156862745" green="0.28235294117647058" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
