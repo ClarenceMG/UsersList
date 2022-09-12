@@ -29,6 +29,10 @@
 		1950C4C728CE719B0033C988 /* RealmSwift.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19B3F9D328CFC65D00DEF6EE /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3F9D228CFC65D00DEF6EE /* APIServiceMock.swift */; };
 		19B3F9D528CFCC2C00DEF6EE /* KindOfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3F9D428CFCC2C00DEF6EE /* KindOfTest.swift */; };
+		19B3F9D728CFF64D00DEF6EE /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; };
+		19B3F9D828CFF64D00DEF6EE /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; };
+		19B3F9D928CFF65900DEF6EE /* Realm.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B3F9DA28CFF65900DEF6EE /* RealmSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19CC6E0A28CE2C1C00925F84 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC6E0928CE2C1C00925F84 /* UserPost.swift */; };
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
@@ -107,6 +111,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				19B3F9D928CFF65900DEF6EE /* Realm.xcframework in CopyFiles */,
+				19B3F9DA28CFF65900DEF6EE /* RealmSwift.xcframework in CopyFiles */,
 				1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */,
 				1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */,
 			);
@@ -194,6 +200,8 @@
 			files = (
 				1941209228CD91770061E1C0 /* Nimble.xcframework in Frameworks */,
 				1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */,
+				19B3F9D728CFF64D00DEF6EE /* Realm.xcframework in Frameworks */,
+				19B3F9D828CFF64D00DEF6EE /* RealmSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
