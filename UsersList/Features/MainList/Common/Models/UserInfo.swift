@@ -21,8 +21,8 @@ typealias UserInfo = [UserInfoElement]
 
 // MARK: Realm objects
 class UserInformation: Object {
-    @Persisted var id: Int = 0
-    @Persisted var name: String?
-    @Persisted var phone: String?
-    @Persisted var email: String?
+    @Persisted var id: Int
+    @Persisted var name: String
+    @Persisted var phone: String
+    @Persisted var email: String
 }

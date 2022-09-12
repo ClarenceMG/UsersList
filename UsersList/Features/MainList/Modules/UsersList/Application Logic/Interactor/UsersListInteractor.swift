@@ -58,7 +58,7 @@ class UsersListInteractor: UsersListInteractorInput {
         var usersList: [UserInfoElement] = []
         
         for user in users {
-            usersList.append(UserInfoElement(id: user.id, name: user.name ?? "", phone: user.phone ?? "", email: user.email ?? ""))
+            usersList.append(UserInfoElement(id: user.id, name: user.name, phone: user.phone, email: user.email))
         }
         
         return usersList
