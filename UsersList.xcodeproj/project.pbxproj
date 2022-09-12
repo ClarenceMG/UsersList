@@ -22,6 +22,10 @@
 		1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; };
 		1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1950C4C428CE71860033C988 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; };
+		1950C4C528CE71860033C988 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; };
+		1950C4C628CE719B0033C988 /* Realm.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1950C4C728CE719B0033C988 /* RealmSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19CC6E0A28CE2C1C00925F84 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC6E0928CE2C1C00925F84 /* UserPost.swift */; };
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
@@ -87,6 +91,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1950C4C628CE719B0033C988 /* Realm.xcframework in CopyFiles */,
+				1950C4C728CE719B0033C988 /* RealmSwift.xcframework in CopyFiles */,
 				1941209028CD91470061E1C0 /* Alamofire.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +131,8 @@
 		1941208D28CD91380061E1C0 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		1941209128CD91770061E1C0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		1941209328CD917A0061E1C0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		1950C4C228CE71850033C988 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Carthage/Build/RealmSwift.xcframework; sourceTree = "<group>"; };
+		1950C4C328CE71850033C988 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Carthage/Build/Realm.xcframework; sourceTree = "<group>"; };
 		19CC6E0928CE2C1C00925F84 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		19D6600D28CDBDB50006B7A5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -168,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1941208E28CD91380061E1C0 /* Alamofire.xcframework in Frameworks */,
+				1950C4C428CE71860033C988 /* RealmSwift.xcframework in Frameworks */,
+				1950C4C528CE71860033C988 /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +265,8 @@
 		1941208C28CD91380061E1C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1950C4C328CE71850033C988 /* Realm.xcframework */,
+				1950C4C228CE71850033C988 /* RealmSwift.xcframework */,
 				1941209328CD917A0061E1C0 /* Quick.xcframework */,
 				1941209128CD91770061E1C0 /* Nimble.xcframework */,
 				1941208D28CD91380061E1C0 /* Alamofire.xcframework */,
