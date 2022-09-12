@@ -7,7 +7,7 @@
 
 class UserDetailInteractor: UserDetailInteractorInput {
     
-    lazy var apiService = APIService()
+    lazy var apiService: APIServiceProvider = APIService()
 
     weak var output: UserDetailInteractorOutput!
     
@@ -19,6 +19,5 @@ class UserDetailInteractor: UserDetailInteractorInput {
                 self.output.didFailRetrievingPosts(title: MainList.Common.error, message: "Hubo un problema obteniendo la lista de posts")
             }
         }
-
     }
 }

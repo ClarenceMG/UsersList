@@ -16,4 +16,10 @@ final class MockMainList {
 
         return [user]
     }
+    
+    func mockPosts() -> [UserPost] {
+        let post = UserPost(userID: 1, id: 2, title: "My post", body: "Mo post content")
+        
+        return [post]
+    }
 }
