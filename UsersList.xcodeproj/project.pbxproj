@@ -27,6 +27,12 @@
 		1950C4C528CE71860033C988 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; };
 		1950C4C628CE719B0033C988 /* Realm.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1950C4C728CE719B0033C988 /* RealmSwift.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B3F9D328CFC65D00DEF6EE /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3F9D228CFC65D00DEF6EE /* APIServiceMock.swift */; };
+		19B3F9D528CFCC2C00DEF6EE /* KindOfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3F9D428CFCC2C00DEF6EE /* KindOfTest.swift */; };
+		19B3F9D728CFF64D00DEF6EE /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; };
+		19B3F9D828CFF64D00DEF6EE /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; };
+		19B3F9D928CFF65900DEF6EE /* Realm.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19B3F9DA28CFF65900DEF6EE /* RealmSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19CC6E0A28CE2C1C00925F84 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC6E0928CE2C1C00925F84 /* UserPost.swift */; };
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
@@ -105,6 +111,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				19B3F9D928CFF65900DEF6EE /* Realm.xcframework in CopyFiles */,
+				19B3F9DA28CFF65900DEF6EE /* RealmSwift.xcframework in CopyFiles */,
 				1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */,
 				1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */,
 			);
@@ -136,6 +144,8 @@
 		1941209328CD917A0061E1C0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		1950C4C228CE71850033C988 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Carthage/Build/RealmSwift.xcframework; sourceTree = "<group>"; };
 		1950C4C328CE71850033C988 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Carthage/Build/Realm.xcframework; sourceTree = "<group>"; };
+		19B3F9D228CFC65D00DEF6EE /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
+		19B3F9D428CFCC2C00DEF6EE /* KindOfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindOfTest.swift; sourceTree = "<group>"; };
 		19CC6E0928CE2C1C00925F84 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		19D6600A28CDB9200006B7A5 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		19D6600D28CDBDB50006B7A5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -190,6 +200,8 @@
 			files = (
 				1941209228CD91770061E1C0 /* Nimble.xcframework in Frameworks */,
 				1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */,
+				19B3F9D728CFF64D00DEF6EE /* Realm.xcframework in Frameworks */,
+				19B3F9D828CFF64D00DEF6EE /* RealmSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +227,7 @@
 		190CA84428CEE32100429B64 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				19B3F9D628CFCCE800DEF6EE /* Entity */,
 				190CA84528CEE33100429B64 /* Mocks */,
 			);
 			path = Common;
@@ -224,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				190CA84628CEE37000429B64 /* MockMainList.swift */,
+				19B3F9D228CFC65D00DEF6EE /* APIServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -292,6 +306,14 @@
 				1941208D28CD91380061E1C0 /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19B3F9D628CFCCE800DEF6EE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				19B3F9D428CFCC2C00DEF6EE /* KindOfTest.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		19D6600628CDA3B70006B7A5 /* Storyboards */ = {
@@ -855,9 +877,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B3F9D528CFCC2C00DEF6EE /* KindOfTest.swift in Sources */,
 				191E689028CC366A001B32C0 /* UsersListTests.swift in Sources */,
 				A2046DAB73A34ACA02CB36D6 /* UsersListConfiguratorTest.swift in Sources */,
 				A99A000A6A7758A54C6A5AB8 /* UsersListInteractorTest.swift in Sources */,
+				19B3F9D328CFC65D00DEF6EE /* APIServiceMock.swift in Sources */,
 				2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */,
 				190CA84A28CEE5E400429B64 /* MockMainList.swift in Sources */,
 				8ADE172500D8803CF90BDDF0 /* UsersListPresenterTest.swift in Sources */,

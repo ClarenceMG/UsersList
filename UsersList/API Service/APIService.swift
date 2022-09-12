@@ -8,7 +8,13 @@
 import Foundation
 import Alamofire
 
-class APIService: NSObject {
+protocol APIServiceProvider {
+    
+    func retrieveUsers(completion: @escaping (UserInfo?) -> ())
+    func retrievePosts(id: Int, completion: @escaping (UserPosts?) -> ())
+}
+
+final class APIService: APIServiceProvider {
     
     let baseUrl = "https://jsonplaceholder.typicode.com"
     
@@ -43,5 +49,4 @@ class APIService: NSObject {
             completion(posts)
         }
     }
-
 }

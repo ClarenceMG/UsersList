@@ -9,7 +9,7 @@ import RealmSwift
 
 class UsersListInteractor: UsersListInteractorInput {
     
-    lazy var apiService = APIService()
+    lazy var apiService: APIServiceProvider = APIService()
     
     lazy var localRealm: Realm = {
         return try! Realm()
@@ -26,7 +26,6 @@ class UsersListInteractor: UsersListInteractorInput {
             return
         }
 
-        
         apiService.retrieveUsers() { [self] users in
             if let users = users {
                 saveUsers(userInfo: users)
