@@ -19,8 +19,6 @@ final class UsersListViewTest: QuickSpec {
         var output: MockOutput!
         
         beforeEach {
-            viewController = UsersListViewController()
-            
             let bundle = Bundle(for: UsersListViewController.self)
             let storyBoard = UIStoryboard(name: "Main", bundle: bundle)
             viewController = storyBoard.instantiateViewController(withIdentifier: "UsersListViewController") as? UsersListViewController
