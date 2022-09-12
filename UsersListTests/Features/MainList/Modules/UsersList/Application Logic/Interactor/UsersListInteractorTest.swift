@@ -27,5 +27,16 @@ final class UsersListInteractorTest: QuickSpec {
     // MARK: Mock Classes
 
     private class MockPresenter: UsersListInteractorOutput {
+        
+        var didRetrieveUsersCount = 0
+        var didFailRetrievingUsersCount = 0
+        
+        func didRetrieveUsers(users: [UserInfoElement]) {
+            didRetrieveUsersCount += 1
+        }
+        
+        func didFailRetrievingUsers(title: String, message: String) {
+            didFailRetrievingUsersCount += 1
+        }
     }
 }

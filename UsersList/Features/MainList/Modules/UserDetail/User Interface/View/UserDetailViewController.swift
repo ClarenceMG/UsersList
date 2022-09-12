@@ -95,4 +95,8 @@ extension UserDetailViewController: UserDetailViewInput {
     func updatePosts(posts: [UserPost]) {
         userPosts = posts
     }
+    
+    func showError(title: String, message: String) {
+        // TODO: Show error message
+    }
 }

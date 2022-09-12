@@ -13,13 +13,30 @@ import Quick
 final class UserDetailViewTest: QuickSpec {
 
     override func spec() {
+        
+        var viewController: UserDetailViewController!
+        var output: MockOutput!
+        
         beforeEach {
+            viewController = UserDetailViewController()
+            output = MockOutput()
+            
+            viewController.output = output
         }
 
         afterEach {
+            viewController = nil
+            output = nil
         }
 
         describe("A UserDetail View") {
+            
+            context("Life cycle") {
+                it ("Should call viewIsReady") {
+                    viewController.viewDidLoad()
+                    expect(output.viewIsReadyCount).to(equal(1))
+                }
+            }
         }
     }
 

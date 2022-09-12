@@ -27,5 +27,16 @@ final class UserDetailInteractorTest: QuickSpec {
     // MARK: Mock Classes
 
     private class MockPresenter: UserDetailInteractorOutput {
+        
+        var didRetrievePostsCount = 0
+        var didFailRetrievingPostsCount = 0
+        
+        func didRetrievePosts(posts: [UserPost]) {
+            didRetrievePostsCount += 1
+        }
+        
+        func didFailRetrievingPosts(title: String, message: String) {
+            didFailRetrievingPostsCount += 1
+        }
     }
 }

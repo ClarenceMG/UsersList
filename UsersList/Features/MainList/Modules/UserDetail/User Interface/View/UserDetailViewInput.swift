@@ -10,4 +10,5 @@ protocol UserDetailViewInput: AnyObject {
     func setUpInitialState(user: UserInfoElement)
     func moduleInput() -> UserDetailModuleInput
     func updatePosts(posts: [UserPost])
+    func showError(title: String, message: String)
 }
