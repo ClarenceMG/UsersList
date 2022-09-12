@@ -44,6 +44,6 @@ extension UserDetailPresenter: UserDetailInteractorOutput {
     }
     
     func didFailRetrievingPosts(title: String, message: String) {
-        print("error")
+        view.showError(title: title, message: message)
     }
 }
