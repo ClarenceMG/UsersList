@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08390275FFD0E0859A9243EC /* UserDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E11C06AB346DB2A1D2A6B /* UserDetailPresenterTest.swift */; };
+		190CA84A28CEE5E400429B64 /* MockMainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190CA84628CEE37000429B64 /* MockMainList.swift */; };
 		191E687928CC3668001B32C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E687828CC3668001B32C0 /* AppDelegate.swift */; };
 		191E687B28CC3668001B32C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E687A28CC3668001B32C0 /* SceneDelegate.swift */; };
 		191E688028CC3668001B32C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E687E28CC3668001B32C0 /* Main.storyboard */; };
@@ -17,15 +18,15 @@
 		191E689A28CC366A001B32C0 /* UsersListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E689928CC366A001B32C0 /* UsersListUITests.swift */; };
 		191E689C28CC366A001B32C0 /* UsersListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E689B28CC366A001B32C0 /* UsersListUITestsLaunchTests.swift */; };
 		1941208E28CD91380061E1C0 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941208D28CD91380061E1C0 /* Alamofire.xcframework */; };
-		1941209028CD91470061E1C0 /* Alamofire.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941208D28CD91380061E1C0 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1941209028CD91470061E1C0 /* Alamofire.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1941208D28CD91380061E1C0 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209228CD91770061E1C0 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; };
 		1941209428CD917A0061E1C0 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; };
 		1941209628CD91900061E1C0 /* Quick.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209328CD917A0061E1C0 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1941209728CD91900061E1C0 /* Nimble.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1941209128CD91770061E1C0 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1950C4C428CE71860033C988 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; };
 		1950C4C528CE71860033C988 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; };
-		1950C4C628CE719B0033C988 /* Realm.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1950C4C728CE719B0033C988 /* RealmSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1950C4C628CE719B0033C988 /* Realm.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1950C4C328CE71850033C988 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1950C4C728CE719B0033C988 /* RealmSwift.xcframework in Copy Files */ = {isa = PBXBuildFile; fileRef = 1950C4C228CE71850033C988 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19CC6E0A28CE2C1C00925F84 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC6E0928CE2C1C00925F84 /* UserPost.swift */; };
 		19D6600B28CDB9200006B7A5 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600A28CDB9200006B7A5 /* MainList.swift */; };
 		19D6600E28CDBDB50006B7A5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6600D28CDBDB50006B7A5 /* APIService.swift */; };
@@ -85,16 +86,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1941208F28CD913D0061E1C0 /* CopyFiles */ = {
+		1941208F28CD913D0061E1C0 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1950C4C628CE719B0033C988 /* Realm.xcframework in CopyFiles */,
-				1950C4C728CE719B0033C988 /* RealmSwift.xcframework in CopyFiles */,
-				1941209028CD91470061E1C0 /* Alamofire.xcframework in CopyFiles */,
+				1950C4C628CE719B0033C988 /* Realm.xcframework in Copy Files */,
+				1950C4C728CE719B0033C988 /* RealmSwift.xcframework in Copy Files */,
+				1941209028CD91470061E1C0 /* Alamofire.xcframework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1941209528CD91840061E1C0 /* CopyFiles */ = {
@@ -116,6 +118,7 @@
 		12D36D8164B43899F2FF2CE0 /* UserDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailViewInput.swift; sourceTree = "<group>"; };
 		159579CF74976CA9F313C3AF /* UsersListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UsersListRouter.swift; sourceTree = "<group>"; };
 		18EB5199D13C3A667FA7E76D /* UserDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
+		190CA84628CEE37000429B64 /* MockMainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainList.swift; sourceTree = "<group>"; };
 		191E687528CC3668001B32C0 /* UsersList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E687828CC3668001B32C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		191E687A28CC3668001B32C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +212,22 @@
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
+		190CA84428CEE32100429B64 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				190CA84528CEE33100429B64 /* Mocks */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		190CA84528CEE33100429B64 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				190CA84628CEE37000429B64 /* MockMainList.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		191E686C28CC3668001B32C0 = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +266,9 @@
 		191E688E28CC366A001B32C0 /* UsersListTests */ = {
 			isa = PBXGroup;
 			children = (
-				191E688F28CC366A001B32C0 /* UsersListTests.swift */,
+				190CA84428CEE32100429B64 /* Common */,
 				E4E8B5F04109932CE1AD26A8 /* Features */,
+				191E688F28CC366A001B32C0 /* UsersListTests.swift */,
 			);
 			path = UsersListTests;
 			sourceTree = "<group>";
@@ -673,7 +693,7 @@
 				191E687128CC3668001B32C0 /* Sources */,
 				191E687228CC3668001B32C0 /* Frameworks */,
 				191E687328CC3668001B32C0 /* Resources */,
-				1941208F28CD913D0061E1C0 /* CopyFiles */,
+				1941208F28CD913D0061E1C0 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -839,6 +859,7 @@
 				A2046DAB73A34ACA02CB36D6 /* UsersListConfiguratorTest.swift in Sources */,
 				A99A000A6A7758A54C6A5AB8 /* UsersListInteractorTest.swift in Sources */,
 				2D2A6F9908B9414321CDAC72 /* UsersListRouterTest.swift in Sources */,
+				190CA84A28CEE5E400429B64 /* MockMainList.swift in Sources */,
 				8ADE172500D8803CF90BDDF0 /* UsersListPresenterTest.swift in Sources */,
 				6188D5DECA26FDF8166E1817 /* UsersListViewTest.swift in Sources */,
 				902946B1073A304B3DCCAFE5 /* UserDetailConfiguratorTest.swift in Sources */,
