@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire"
+github "Quick/Quick"
+github "Quick/Nimble"
+github "realm/realm-swift"
