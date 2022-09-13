@@ -9,7 +9,6 @@ import Foundation
 
 class UserDetailModuleInitializer: NSObject {
 
-    // TODO: Connect with object on storyboard
     @IBOutlet weak var userDetailViewController: UserDetailViewController!
 
     override func awakeFromNib() {
