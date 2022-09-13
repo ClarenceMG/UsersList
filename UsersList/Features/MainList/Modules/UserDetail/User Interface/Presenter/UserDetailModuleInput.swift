@@ -7,7 +7,5 @@
 
 protocol UserDetailModuleInput: AnyObject {
 
-    // TODO: Include in this method the parameters needed to initialize the module
-    // Please remove both these comments
     func initializeModule(user: UserInfoElement)
 }

@@ -91,7 +91,10 @@ extension UsersListViewController: UsersListViewInput {
     }
     
     func showError(title: String, message: String) {
-        // TODO: Show error message
+        let uialert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        uialert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        
+        self.present(uialert, animated: true, completion: nil)
     }
     
     func showLoadingIndicator() {

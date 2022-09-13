@@ -9,7 +9,6 @@ import Foundation
 
 class UsersListModuleInitializer: NSObject {
 
-    // TODO: Connect with object on storyboard
     @IBOutlet weak var usersListViewController: UsersListViewController!
 
     override func awakeFromNib() {
